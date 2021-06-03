@@ -186,7 +186,7 @@ public class PushThread extends Thread {
 	
 	// 푸시 전송 후 작업
 	public void finish(MyMap pushInfo) {
-    // 메세지 아예 삭제 또는 푸시 상태만 완료로 변경
+    	// 메세지 아예 삭제 또는 푸시 상태만 완료로 변경
 		// pushSendService.deleteSendData(pushInfo); 푸시 내용 삭제
 		pushInfo.put("status", "COMPLETE");
 		pushSendService.updateStatus(pushInfo); // 푸시 COMPLETE 로 변경.
